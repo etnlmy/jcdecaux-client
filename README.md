@@ -46,7 +46,7 @@ stations = client.stations
 
 ``` ruby
 
-station = client.stations(contract_name: "Nantes")
+stations = client.stations(contract_name: "Nantes")
 
 ```
 
