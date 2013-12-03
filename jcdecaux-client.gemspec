@@ -3,7 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "jcdecaux_client"
+  spec.name          = "jcdecaux-client"
   spec.version       = "0.0.1"
   spec.authors       = ["eTnDev"]
   spec.email         = ["etienne.lamydlc@gmail.com"]

@@ -1,12 +1,12 @@
-# Velib::Api::Wrapper
+# JCDecauxClient
 
-TODO: Write a gem description
+A Ruby API Wrapper for the JCDecaux self-service bicycles [open data platform](https://developer.jcdecaux.com).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'velib-api-wrapper'
+    gem 'jcdecaux-client'
 
 And then execute:
 
@@ -14,11 +14,51 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install velib-api-wrapper
+    $ gem install jcdecaux-client
 
 ## Usage
 
-TODO: Write usage instructions here
+#### Initialize the client with your API key:
+
+``` ruby
+
+client = JCDecauxClient.new('xxxxxxxxxxxxxxxx')
+
+```
+
+#### Get the contracts:
+
+``` ruby
+
+contracts = client.contracts
+
+```
+
+#### Get all the stations:
+
+``` ruby
+
+stations = client.stations
+
+```
+
+#### Get the stations for a given contract:
+
+``` ruby
+
+station = client.stations(contract_name: "Nantes")
+
+```
+
+#### Get a particular station:
+
+``` ruby
+
+station = client.station(station_number: 38, contract_name: "Nantes")
+
+```
+
+
 
 ## Contributing
 
