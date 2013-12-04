@@ -16,6 +16,16 @@ Or install it yourself as:
 
     $ gem install jcdecaux-client
 
+## Testing
+
+#### Run the specs with rake and provide your API key:
+
+``` bat
+
+rake api_key='xxxxxxxxxxxxxxxx'
+
+```
+
 ## Usage
 
 #### Initialize the client with your API key:
